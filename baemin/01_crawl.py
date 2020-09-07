@@ -17,3 +17,5 @@ driver.find_element_by_xpath('//*[@id="root"]/div/div[1]/div[3]/div[1]/div[1]/di
 time.sleep(1)
 # 조회 클릭
 driver.find_element_by_xpath('//*[@id="root"]/div/div[1]/div[3]/div[1]/div[1]/div/button').click()
+
+open('baemin_{}.html'.format('ki2918'), 'w+', encoding='utf-8').write(driver.page_source)
