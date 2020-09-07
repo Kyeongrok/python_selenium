@@ -10,3 +10,10 @@ driver = webdriver.Chrome('../chrome/chromedriver', options=chrome_options)
 url = 'https://ceo.baemin.com/self-service/orders/tax'
 
 driver.get(url)
+
+# 2분기
+time.sleep(2)
+driver.find_element_by_xpath('//*[@id="root"]/div/div[1]/div[3]/div[1]/div[1]/div/div[1]/label[2]/p').click()
+time.sleep(1)
+# 조회 클릭
+driver.find_element_by_xpath('//*[@id="root"]/div/div[1]/div[3]/div[1]/div[1]/div/button').click()
