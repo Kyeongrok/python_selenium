@@ -8,8 +8,9 @@ driver = webdriver.Chrome('../chrome/chromedriver', options=chrome_options)
 
 # 디버그 모드 chrome에서 로그인을 하신 후 실행 하세요.
 
-url = 'https://ceo.baemin.com/'
+url = 'https://ceo.baemin.com/web/login'
 driver.get(url)
+time.sleep(2)
 
 driver.find_element_by_xpath('//*[@id="id"]').send_keys('oceanfog')
 
