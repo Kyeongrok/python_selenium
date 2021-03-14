@@ -21,9 +21,9 @@ driver.find_elements_by_class_name("h-btn01")[1]\
 
 
 driver.find_element_by_id("inputID")\
-     .send_keys("oceanfog")
+     .send_keys("여기에id를 넣으세요.")
 driver.find_element_by_id("inputPW") \
-    .send_keys("4rhat1249")
+    .send_keys("여기에 pw를 넣으세요.")
 
 driver.find_element_by_xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a/img").click()
 
