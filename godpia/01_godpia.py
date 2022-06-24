@@ -60,6 +60,7 @@ class GodPiaBibleWriter:
             cnt = 0
             while (textarea.is_enabled() == False and cnt < 5):
                 textarea = ps[1].find_element_by_tag_name("textarea")
+                textarea.click()
                 rndInt = random.randint(2, 5)
                 print(f"------is_enabled() False then plus {rndInt} sec -----")
                 time.sleep(rndInt)
@@ -84,8 +85,8 @@ class GodPiaBibleWriter:
 
 #1pe 벧전 #2pe벧후3 1jn요일 5 계rev
 #창gen
-godpia_writer = GodPiaBibleWriter('debug')
-godpia_writer.call('sub020302', '2386', 'gen', 9, 10)
+godpia_writer = GodPiaBibleWriter('login')
+godpia_writer.call('sub020302', '2386', 'gen', 10, 11)
 
 
 
