@@ -30,7 +30,7 @@ class GodPiaBibleWriter:
     def login(self, driver, id, password):
         url = 'http://www.godpia.com/login/login_page.asp?ishref=http://bible.godpia.com/frameindex.asp?url_flag=/index.asp?&ipserver=bible.godpia.com'
         driver.get(url)
-
+        time.sleep(1)
         driver.find_element_by_id("inputID") \
             .send_keys(id)
         driver.find_element_by_id("inputPW") \
@@ -81,12 +81,12 @@ class GodPiaBibleWriter:
             print("{}장".format(chapter))
             chapterUrl = f"http://bible.godpia.com/write/{sub}.asp?cb_idx={cb_idx}&ver=gae&vol={book_cd}&chap={chapter}&secindex=1"
             self.run(chapterUrl)
-            time.sleep(30)
+            time.sleep(60 * 6)
 
 #1pe 벧전 #2pe벧후3 1jn요일 5 계rev
 #창gen
 godpia_writer = GodPiaBibleWriter('login')
-godpia_writer.call('sub020302', '2386', 'gen', 10, 11)
+godpia_writer.call('sub020302', '2386', 'gen', 26, 27)
 
 
 
