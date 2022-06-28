@@ -81,10 +81,10 @@ class GodPiaBibleWriter:
             print("{}장".format(chapter))
             chapterUrl = f"http://bible.godpia.com/write/{sub}.asp?cb_idx={cb_idx}&ver=gae&vol={book_cd}&chap={chapter}&secindex=1"
             self.run(chapterUrl)
-            time.sleep(30)
+            time.sleep(60 * 6)
 
 #1pe 벧전 #2pe벧후3 1jn요일 5 계rev
-#창gen
+#창gen 출exo
 godpia_writer = GodPiaBibleWriter('login')
 godpia_writer.call('sub020302', '2386', 'gen', 10, 11)
 
