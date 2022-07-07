@@ -1,0 +1,3286 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-W5M9YYF01J&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-M6XH2J5"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6XH2J5');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "816a646b659bb8";
+wcs_do();
+</script>
+
+  <title>GODpia 성경</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,target-densitydpi=medium-dpi">
+
+<meta name="title" content="GODpia 성경">
+<meta name="description" content="Godpia 성경">
+<meta name="keyword" content="GODpia 성경, 갓피아 성경, bible">
+<meta content="GODpia 성경" property="og:title">
+<meta content="GODpia 성경, 갓피아 성경" property="og:description">
+<meta content="https://www.sarang.org/images/common/meta_godpia02.jpg" property="og:image">
+
+  
+  <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+<!--
+function logout(){
+  top.location.replace("https://www.godpia.com/login/login_index.asp?log_flag=logout&ishref=http://bible.godpia.com/frameindex.asp!!url_flag=/index.asp&ipserver=bible.godpia.com");
+}
+//-->
+</script><!--CSS-->
+  <!--link media="screen" class="themecss" rel="alternate stylesheet" type="text/css" href="../../css/theme_yellow.css" title="ThemeYellow" /-->
+  <!--link media="screen" class="themecss" rel="alternate stylesheet" type="text/css" href="../../css/theme_white.css" title="ThemeWhite" /-->
+  <!--link media="screen" class="themecss" rel="alternate stylesheet" type="text/css" href="../../css/theme_black.css" title="Themeblcak" /-->
+  <link rel="stylesheet" href="../../css/default.css">
+  <link rel="stylesheet" href="../../css/layout.css?v=3"><!--JQUERY-->
+  <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../../js/common.js"></script>
+  <!-- script type="text/javascript" src="../../js/styleswitcher_home-new.js"></script-->
+  <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+
+
+<script language="JavaScript" src="http://www.godpia.com/login/Script_Login_utf8.asp?VIU=&amp;HTTPD=bible.godpia.com&amp;HTTPU=/write/sub020301.asp?cb_idx=2386"></script>
+<script type="text/javascript"> 
+<!--
+
+$(document).ready(function(){
+  var jGlobalObj = "";
+  /*$(".bg-icon02").on("click", function(){
+    $(".sub-content-inbox").addClass("black");
+  });*/
+  $(".bg-icon01").on("click", function(){
+    $(".sub-content-inbox").removeClass("black");
+  });
+  /*$(".bg-icon04").on("click", function(){
+    $(".sub-content-inbox").removeClass("black");
+  });*/
+
+  $(".wide p").click(function(e){
+    if(e.target.className == "memo_img") { 
+    } else {
+	 jGlobalObj = $(this);
+      var pos = jGlobalObj.find(".txt").position();
+      var rePos = $(".sub-cont").position();
+      $("#lay").css({
+        "top": pos.top +rePos.top + 80
+        ,"left": pos.left + rePos.left 
+        , "position": "absolute"
+      });
+      if($("#lay").is(":visible")) {
+        $("#lay").hide();
+      } else {
+        $("#lay").show();
+      }
+    }
+  });
+
+  $(".wide2 p").click(function(e){
+    if(e.target.className == "memo_img") { 
+    } else {
+	  if ($("#lay2").is(":visible")) {
+        if ($(".wide2 p").hasClass("rtl")) {
+          $("#lay2").hide(); 
+        } else{
+          $("#lay").show();
+        }
+      }else{
+        $(".rtl").click(function(){
+          $("#lay").hide();
+          $("#lay2").show();
+        });
+      }  
+      if ($(this).hasClass("rtl")) {
+        jGlobalObj = $(this);
+        var pos = jGlobalObj.find(".num, .num2").position();
+        var rePos = $(".sub-cont").position();
+        $("#lay2").css({
+          "top": pos.top +rePos.top + 80
+          ,"left": pos.left + rePos.left - 215
+          , "position": "absolute"
+        });
+        if($("#lay2").is(":visible")) {
+          $("#lay2").hide();
+        } else {
+          $("#lay2").show();  
+        }
+      } else {
+        jGlobalObj = $(this);
+        var pos = jGlobalObj.find(".num, .num2").position();
+        var rePos = $(".sub-cont").position();
+        $("#lay").css({
+          "top": pos.top +rePos.top + 80
+          ,"left": pos.left + rePos.left 
+          , "position": "absolute"
+        });
+        if($("#lay").is(":visible")) {
+          $("#lay").hide();
+        } else {
+          $("#lay").show();
+        }
+      }
+    }
+  });
+
+   
+  $(".wide3 p").click(function(e){
+	if(e.target.className == "memo_img") { 
+    } else {
+      jGlobalObj = $(this);
+      var pos = jGlobalObj.find(".num, .num2").position();
+      var rePos = $(".sub-cont").position();
+      $("#lay2").css({
+        "top": pos.top +rePos.top - 40
+        ,"left": pos.left + rePos.left - 215
+        , "position": "absolute"
+      });
+      if($("#lay2").is(":visible")) {
+        $("#lay2").hide();
+      } else {
+        $("#lay2").show();
+      }
+	}
+  });
+
+  /*좋아요*/
+  $("li.lay01, li.lay04, li.lay07").on("click", function(){
+    
+    //$("#lay, #lay2").hide();
+    if(jGlobalObj.find("img").hasClass("heart_img")) { 
+      fncLMBProc('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),'',jGlobalObj,'L','D');
+    }else {
+      fncLMBProc('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),'',jGlobalObj,'L','I');
+    }
+    
+  });
+  
+  /*메모*/
+  $("li.lay02, li.lay05, li.lay08").on("click", function(){
+    
+    if (jGlobalObj.next("div").is(":visible")) {
+      $("#lay, #lay2").hide();
+      jGlobalObj.next("div[id='memo']").stop().slideUp();
+    } else {
+      $("#lay, #lay2").hide();
+      $('#memo').hide();
+      jGlobalObj.after($('#memo')); 
+      fncMemoSlideDown('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),jGlobalObj);
+    }
+    
+  });
+
+  /*형광펜*/
+  $("li.lay03, li.lay06, li.lay09").on("click", function(){
+    
+    //$("#lay, #lay2").hide();
+    if(jGlobalObj.find("img").hasClass("penicon")) { 
+      fncLMBProc('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),'',jGlobalObj,'B','D');
+    }else {
+      fncLMBProc('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),'',jGlobalObj,'B','I');
+    }
+    
+  });
+
+  $(".save-btn").on("click", function(){  // 메모 저장
+    
+    jGlobalObj = $(this).closest("div.memo").prev();
+    if ($(".memoText").val()==""){
+      alert("내용을 넣어주세요");
+      $(".memoText").focus();
+    }else{
+      fncLMBProc('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),$(".memoText").val(),jGlobalObj,'M','I');
+    }
+    //$("#lay, #lay2").hide();
+    
+  });
+
+  $(".cancel-btn").on("click", function(){  // 메모 삭제
+    
+    jGlobalObj = $(this).closest("div.memo").prev();
+    fncLMBProc('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),"",jGlobalObj,'M','D');
+    //$("#lay, #lay2").hide();
+    
+  });
+
+  $(document).on("click",".memo_img",function(){ // 메모 아이콘 클릭
+    
+    jGlobalObj = $(this).closest("p");
+    if (jGlobalObj.next("div").is(":visible")) {
+      $("#lay, #lay2").hide();
+      jGlobalObj.next("div[id='memo']").stop().slideUp();
+    } else {
+      $("#lay, #lay2").hide();
+      $('#memo').hide();
+      jGlobalObj.after($('#memo')); 
+      fncMemoSlideDown('oceanfog',jGlobalObj.attr("dataVer"),jGlobalObj.attr("dataVol"),jGlobalObj.attr("dataChap"),jGlobalObj.attr("dataSec"),jGlobalObj);
+    }
+    
+  });
+  
+  ttsCount = true;
+
+  try{
+    $('audio,video').mediaelementplayer({
+      audioWidth: 400
+      ,success: function (mediaElement, domObject) { 
+        $("#idX2").on("click",function(){
+          if ($("#idX2").text()=="X1"){
+            $("#idX2").text("X2");
+            mediaElement.playbackRate = 2.0;
+            mediaElement.defaultPlaybackRate = 2.0;
+          }else{
+            $("#idX2").text("X1");
+            mediaElement.playbackRate = 1.0;
+            mediaElement.defaultPlaybackRate = 1.0;
+          }
+        }); 
+
+        // play counter add
+        mediaElement.addEventListener('play', function(e){
+          if (ttsCount){
+            console.info("play");
+            $.ajax({ type : "post",  data : { ip:"173",TN:"fourcount",CN:"etc",idx:"3405"}, url : "/include/global_cnt.asp"  });
+            ttsCount = false;            
+          }
+        });
+
+        /** 이어듣기 부분 추가 s **/
+        mediaElement.addEventListener('ended', function(e){//다음장 이어듣기 기능 추가?????
+          if ( $("#radio_continue").length > 0 ){ // 이어듣기 hidden값이 있는 경우만 실행
+            if ( $(".nextUrl").length > 0 ){ //다음절 이동 버튼
+              $("#radio_continue").val("Y"); 
+              $(".nextUrl").trigger("click"); 
+            }else{
+              $("#radio_continue").val("N"); 
+            }
+          }
+        });
+
+        
+        /** 이어듣기 부분 추가 e **/
+
+      },
+    });
+  }catch(e){ //alert("code"+e.number+",desc:"+e.description);
+  }
+  
+  // write
+  // write effect s
+  $.fn.selectRange = function(start, end) {
+    return this.each(function() {
+      if(this.setSelectionRange) {
+        this.focus();
+        this.setSelectionRange(start, end);
+      }else if(this.createTextRange) {
+        var range = this.createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', end);
+        range.moveStart('character', start);
+        range.select();
+      }
+    });
+  };
+
+  $(".writeInput").on("focusout", function(){ 
+    $(this).attr("disabled",true);
+    $(this).parent().addClass("clsWriteChap"); 
+  });
+  $(document).on("click",".clsWriteChap",function(){
+    $(this).children().attr("disabled",false).focus();
+  });
+  var ctrlDown = false,
+  ctrlKey = 17,
+  cmdKey = 91,
+  vKey = 86,
+  cKey = 67;
+  $(".writeInput").on('keydown',function(e){
+    if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
+  }).on('keyup',function(e){
+    if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
+  });
+
+  $(".writeInput").on('keydown',function(e) {
+    if (ctrlDown && (e.keyCode == vKey || e.keyCode == cKey)) return false;
+  });
+
+  $(".writeInput").on('contextmenu',function(e) {
+    return false;
+  });
+  $(".writeInput").on('click focus', function(){ 
+    liIndex = $(".writeInput").index($(this));
+    $('.writeSecli').not($(this).parent().parent().parent()).removeClass('focustxt');
+    $(this).parent().parent().parent().addClass('focustxt');
+    if (liIndex == 0){
+      $(".writeInput").eq(liIndex).css({'height': 11 + $(".writeInput").eq(liIndex).parent().parent().find(".writeTxt").height()+"px" })
+    }if (liIndex > 0){
+      $(".writeInput").eq(liIndex-1).css({'height': 11 + $(".writeInput").eq(liIndex-1).parent().parent().find(".writeTxt").height()+"px" })
+      $(".writeInput").eq(liIndex).css({'height': 11 + $(".writeInput").eq(liIndex).parent().parent().find(".writeTxt").height()+"px" })
+    }
+  });
+  $(".writeInput").on('keydown',function(e){
+    if (e.keyCode==13){	// 엔터시 종료
+      return false;
+    }
+  });
+  var errorIndex = -1;
+  var enterChk = true;
+  var chkKeyUp = 0;
+  $(".writeInput").on('keyup',function(e){
+    if (e.keyCode!=13){
+      chkKeyUp++;
+    }
+    writeStr = $(this).parent().prev().text();
+    contentTotal = ""
+    contentLen = writeStr.length;
+    //console.info($(this).val());   
+    for (i=0 ; i<contentLen ; i++){
+      if (i < $(this).val().length-1){
+        //console.info(writeStr.slice(i,i+1));
+        if (writeStr.slice(i,i+1) == $(this).val().slice(i,i+1)){
+          contentTotal += writeStr.slice(i,i+1);
+        }else{
+          contentTotal += "<FONT style='BACKGROUND-COLOR:#F5A0CE;'>"+ writeStr.slice(i,i+1) +"</font>";
+        }
+      }else{
+        contentTotal += writeStr.slice(i,i+1);
+      }	
+    }
+    $(this).parent().prev().html(contentTotal);
+    if (e.keyCode==13&&enterChk){	// 엔터시 종료
+      enterChk = false;
+      writeIndex = $(".writeInput").index( $(this) );
+      
+      if ( writeStr.trim() == $(this).val().trim() && writeStr.length < chkKeyUp ){
+      
+      //if ( $.trim(writeStr) == $.trim($(this).val()) ){
+        $(".writeInput").eq( writeIndex ).attr("disabled","disabled");
+        liObj = $(this).parent().parent().parent();
+        pDate = "";
+        try{ pDate = liObj.attr("dataDate"); }catch(e){}
+        $.ajax({
+          type : "post",
+          data : {
+            writeFlag : $("#writeFlag").val()
+            ,pId : "oceanfog"
+            ,pVer : liObj.attr("dataVer")
+            ,pVer2 : liObj.attr("dataVer2")
+            ,pVol : liObj.attr("dataVol")
+            ,pChap : liObj.attr("dataChap")
+            ,pSec : liObj.attr("dataSec")
+            ,pSecIndex : liObj.attr("dataSecIndex")
+            ,pEndSec : liObj.attr("dataEndSec")
+            ,pDate : pDate
+            
+          },
+          url : "/write/setWriteSec.asp",
+          success : function(result){
+            if (result=="OK"){
+              chkKeyUp = 0;
+              //$(".writeInput").eq( writeIndex ).attr("disabled","disabled");
+              if ( writeIndex < $(".writeInput").length - 1 ){ // 다음절로 이동
+                $(".writeInput").eq( writeIndex + 1).removeAttr("disabled").focus();
+                $('body, html').stop().animate({scrollTop:( $(".writeInput").eq( writeIndex + 1).offset().top - ($( window ).height()/2) )}, 300);
+              }else{
+                if ($("#writeFlag").val()=="G"){
+                  document.location.href = "/write/writeFirst.asp?writeFlag="+$("#writeFlag").val()+"&pDate="+ pDate +"&cUrl=/write/sub020301.asp";
+                }else if($("#writeFlag").val()=="H"){
+                  document.location.href = "/write/sub020301.asp?cb_idx="+liObj.attr("dataCbidx")+"&vol="+liObj.attr("dataVol")+"#progarea";
+                }else if($("#writeFlag").val()=="I"){
+                  document.location.href = "/write/sub020402.asp?cb_idx="+liObj.attr("dataCbidx")+"&vol="+liObj.attr("dataVol");
+                }else{
+                  document.location.href = "/write/writeFirst.asp?writeFlag="+$("#writeFlag").val()+"&cUrl=/write/sub020301.asp";
+                }
+              }
+            }
+            enterChk = true;
+          },
+        });
+      }else{
+        $(".writeInput").eq( writeIndex ).removeAttr("disabled");
+        contentTotal = "";
+        errChk = true;
+        errorIndex = -1;
+        for (i=0 ; i<contentLen ; i++){
+          if (i < $(this).val().length){
+            if (writeStr.slice(i,i+1) == $(this).val().slice(i,i+1)){
+              contentTotal += writeStr.slice(i,i+1);
+            }else{
+              contentTotal += "<FONT style='BACKGROUND-COLOR:#F5A0CE;'>"+ writeStr.slice(i,i+1) +"</font>";
+              if (errorIndex == -1) errorIndex = i;
+              errChk = false;
+            }
+          }else{
+            contentTotal += "<FONT style='BACKGROUND-COLOR:#F5A0CE;'>"+ writeStr.slice(i,i+1) +"</font>";
+          }	
+        }
+        $(this).parent().prev().html(contentTotal);
+        if (errorIndex!=-1){
+          $(this).selectRange(errorIndex,errorIndex+1);
+        }else{
+          $(this).selectRange($(this).val().length,$(this).val().length);
+        }
+        //console.info("틀림");
+        enterChk = true;
+      }
+    }
+    console.log(chkKeyUp);
+  });
+  // write effect e
+
+});
+//-->
+</script>
+
+  <script type="text/javascript" src="../../js/fakeselect2.js"></script>
+  <script type="text/javascript" src="../../js/jquery.book.js"></script>
+  <script type="text/javascript" src="../../js/autosize.js"></script>
+  <script type="text/javascript" src="../../js/tab.js"></script>
+  <script type="text/javascript" src="../../js/jquery.supercal.js"></script>
+  <script type="text/javascript"> 
+<!--
+function resize(obj) {
+  obj.style.height = "1px";
+  obj.style.height = (20+obj.scrollHeight)+"px";
+}
+//-->
+</script>
+
+<script type="text/javascript"> 
+<!--
+  $(document).ready(function(){
+    $(document).on("keypress","#input_bibleSearch",function(e){// 성경검색
+      if(e.keyCode==13) {
+        e.preventDefault();
+        $("#btn_bibleSearch").trigger("click"); 
+      }
+    });
+
+    $(document).on("click","#btn_bibleSearch",function(){// 성경검색
+      var frm = document.frm_bibleSearch;
+      frm.action = "/etc/search.asp";
+      if($.trim($("input[name=s_string]").val())==""){
+        alert("검색어를 입력하세요.");
+        frm.s_string.focus();
+        return false;
+      }
+      frm.submit();
+    });
+  });
+  
+  // write textarea resize
+  $(window).load(function(){
+    function resize_new(obj) {
+      for(i=0;i<$(".writeInput").length;i++){
+        //console.info(obj.eq(i).parent().parent().find(".writeTxt").heigh);
+        obj.eq(i).css({'height': 11 + obj.eq(i).parent().parent().find(".writeTxt").height()+"px" })
+      }
+    }
+    resize_new($(".writeInput"));
+  });
+
+  var wHeight; // 윈도우 창 크기
+  var topHeight; // 최상위 높이
+  var wideHeight; // 본문 높이
+  var bottomHeight; // 최하위 높이
+  
+
+  var rightFix = function (arg){
+    try{
+      wHeight = $( window ).height();
+      topHeight = $(".wide, .wide2, .wide3").offset().top;
+      setBtnH = wHeight / 2 - 16;
+      bottomHeight = topHeight + wideHeight;
+
+      if ( setBtnH + $( window ).scrollTop() < topHeight ){
+        $(".divQuickTop_new").css({"position":"absolute"}) ;
+        $(".divQuickTop_new").css({"top": "73px"}) ;
+      }else if ( setBtnH + $( window ).scrollTop() > bottomHeight ) {
+        $(".divQuickTop_new").css({"position":"absolute"}) ;
+        $(".divQuickTop_new").css({"top": bottomHeight - 242 }) ;
+      }else{
+        $(".divQuickTop_new").css({"position":"fixed"}) ;
+        $(".divQuickTop_new").css({"top": setBtnH}) ;
+        if ( $( window ).scrollLeft() > 0 ){
+          $(".clsPrevBtn").css( {"margin-left": -102 - $( window ).scrollLeft() });
+          $(".clsNextBtn").css( {"margin-left": 1117 - $( window ).scrollLeft() });
+        }else{
+          $(".clsPrevBtn").css( {"margin-left": -102 });
+          $(".clsNextBtn").css( {"margin-left": 1117 });
+        }
+      }
+    }catch(e){}
+  }
+  $(window).ready(function(){
+    wideHeight = $(".wide, .wide2, .wide3").height();
+    if (wideHeight < 590) wideHeight = 590;
+    rightFix(0); // right 고정 호출
+  });
+
+  $(window).resize(function(){rightFix(1);}).scroll(function(){rightFix(1);});
+
+
+//-->
+</script>
+
+  <script>
+  <!--
+  $(document).ready(function(){
+    // .setpop 셋업팝업
+    // .commpop 댓글작성팝업
+    // .pwpop 패스워드 팝업 - 그룹삭제시 필요
+    // .calarea 달력팝업
+    
+    $('#tab, #tab2').tabify(); // 구약 신약 탭기능 이후 ajax 로 기능 변경
+    $("select#color").change(function(){
+      $(this).siblings("label").text( $(this).children("option:selected").text() );
+    });
+
+    $(".clsGB1").click(function(){
+      fncVolInfo('2386','1');
+    });
+    $(".clsGB2").click(function(){
+      fncVolInfo('2386','2');
+    });
+
+    function fncVolInfo(cbidx,gb){
+      $(".clsVolBody").load('/write/groupVolInfo.asp',{ 'pCbidx' : cbidx,'pVer' : 'gae','gb' : gb,'joinYN' : "Y" });
+    }
+    fncVolInfo('2386','1');
+    // vol user info s
+    var temObj = null;
+    $(document).on("mouseover",".probox table td li",function(e){ // 절 마우스 오버시
+      editBtnHeight = 0;
+      temObj = $(this);
+      if ($(this).hasClass("clsEdit")){
+        $(".clsEditBtn").css({"left":$(this).offset().left+31,"top":$(this).offset().top}).show();
+        $(".clsEditBtn").attr("dataVol",$(this).attr("dataVol")).attr("dataChap",$(this).attr("dataChap"));
+        editBtnHeight = 12;
+      }
+      if ($(this).attr("dataUserId")!=""){
+        $(".clsUserId").text($(this).attr("dataUserId")+"("+$(this).attr("dataUserName")+")").css({"left":$(this).offset().left+31,"top":$(this).offset().top+editBtnHeight}).show();
+      }
+    });
+    $(document).on("mouseout",".probox table td li",function(e){ // 절 마우스 오버시
+      $(".clsEditBtn").hide();
+      $(".clsUserId").text("").hide();
+    });
+    $(document).on("mouseover",".clsEditBtn",function(e){ // 절 마우스 오버시
+      $(this).show();
+    });
+    $(document).on("mouseout",".clsEditBtn",function(){
+      $(this).hide();
+    });
+    $(document).on("click",".probox table td li",function(e){ // 절 마우스 오버시
+      if ( !$(this).hasClass("spot1")&&!$(this).hasClass("spot3")&&!$(this).hasClass("spot4")&&!$(this).hasClass("noCursor") ){
+        if ( $(this).hasClass("spot2") ){ // 페이지 이동
+          document.location.href = "/write/sub020302.asp?cb_idx=2386&ver=gae&vol="+$(this).attr("dataVol")+"&chap="+$(this).attr("dataChap")+"&secindex="+$(this).attr("dataSecIndex") ;
+        }else{
+          fncChapProc("I","2386",$(this).attr("dataVol"),$(this).attr("dataChap"),'oceanfog',temObj)
+        }
+      }
+    });
+    $(document).on("click",".clsEditBtn",function(){
+      fncChapProc("D","2386",$(this).attr("dataVol"),$(this).attr("dataChap"),'oceanfog',temObj)
+    });
+
+    function fncChapProc(flag,cbIdx,vol,chap,id,obj){
+      $.ajax({
+        type : "post",
+        data : {
+          pFlag : flag,
+          pCbidx : cbIdx,
+          pVol : vol,
+          pChap : chap,
+          pId : id
+        },
+        url : "/write/groupChapProc.asp",
+        success : function(result){
+          if (flag=="D"&&result=="DOK"){
+            obj.removeClass("spot2").removeClass("clsEdit").removeClass("spot3").removeClass("spot4").attr("dataUserId","");
+          }else if (flag=="I"&&result=="IOK"){
+            obj.addClass("spot2").addClass("clsEdit");
+          }else if (flag=="I"&&result!=""){
+            obj.addClass("spot3").attr("dataUserId",result);
+          }
+        }
+      });
+    }
+
+    $(document).on("click",".gUserPage .pageNum",function(){ 
+      $(".rankview").load("/write/GCUserRank.asp",{"page":$(this).attr("href").substring(1,10),"writeFlag":"H","pCbidx":"2386"},function(){       
+      });
+    });
+
+    
+    $(".clsGroupOut").click(function(){
+      
+      if (confirm("[서초 소망6 다락방] 그룹을 탈퇴 하시겠습니까?\n탈퇴시 해당 그룹에서 진행중인 필사는 삭제됩니다.") ){
+        $.ajax({
+          type : "post",
+          data : {
+            writeFlag : $("#writeFlag").val(),
+            pCbidx : "2386",
+            pId : 'oceanfog'
+          },
+          url : "/write/GCUserDel.asp",
+          success : function(result){
+            if (result=="OK"){
+              document.location.href = "/index.asp";
+            }else{
+            }
+          }
+        });
+      }
+      
+    });
+
+    
+
+    (function($) {
+      $.fn.extend( {
+        limiter: function(limit, elem) {
+          $(this).on("keypress", function(e) {
+            if (e.keyCode == 13)
+              e.preventDefault();
+          }); 
+          $(this).on("keyup focus", function(e) {
+            if (e.keyCode==13){e.preventDefault();}
+            else{setCount(this, elem);}
+          });
+          function setCount(src, elem) {
+            var str = src.value;
+            var tempComment = "";
+            var charLen = 0;
+            var size = 0;
+            for(var i=0;i<str.length;i++) {
+              if (str.charCodeAt(i)!=10){
+                if(44032 <str.charCodeAt(i) && str.charCodeAt(i) <=  55203 || 12593 <= str.charCodeAt(i) && str.charCodeAt(i) <= 12686)
+                  size+=2;
+                else
+                  size++;
+                if (size > limit) {
+                  size = limit;
+                  src.value = str.substr(0, i);
+                  break;                      
+                }
+                charLen++;
+              }
+            }
+            elem.html(size + ' / ' + limit);
+          }
+          $(this).on("keydown focus",function(event) {
+            if (event.ctrlKey==true && (event.which == '118' || event.which == '86')) {
+              event.preventDefault();
+            }
+          });
+          setCount($(this)[0], elem);
+        }
+      });
+    })(jQuery);
+    $(document).ready(function(){ // 붙여넣기 제거
+      $(document).keydown(function(event) {
+        if (event.ctrlKey==true && (event.which == '118' || event.which == '86')) {
+          event.preventDefault();
+        }
+      });
+    });
+    var elem = $("#commentChars");
+    $(".clsContents").limiter(300, elem);
+    
+    $('#commbtn').click(function(){ // 댓글쓰기 레이어 오픈
+      $(".commpop").fadeIn(200);
+      $('.dimd').fadeIn(200);
+    });
+
+    $('.commpop .registr').click(function(){ // 댓글쓰기 작성 완료
+      fncCommentProc("I","0",$(".clsContents").val());
+    });
+
+    function fncCommentProc(flag,dbidx,cont){
+      $.ajax({
+        type : "post",
+        data : {
+          writeFlag : $("#writeFlag").val(),
+          pFlag : flag,
+          pCbidx : "2386",
+          pDbidx : dbidx,
+          pId : "oceanfog",
+          pContents : cont
+        },
+        url : "/write/GCCommentProc.asp",
+        success : function(result){
+          if (result=="OK"){
+            $(".clsContents").val("");
+            $("#commentChars").text("0 / 300");
+            $(".commpop").fadeOut(200);
+            $('.dimd').fadeOut(200);
+            if (flag=="D")
+              fncComment( $(".commpop .clsCurPage").val() );
+            else
+              fncComment(1);
+          }
+        }
+      });
+    }
+    $(document).on("click",".commbox .recomclear",function(){ 
+      fncCommentProc("D",$(this).attr("dataIdx"),"");
+    });
+    
+    $(".commpop .close5").click(function(){ // 댓글쓰기 레이어 닫기
+      $(".commpop").fadeOut(100);
+      $('.dimd').fadeOut(200);
+    });
+
+    
+    function fncComment(page){
+      $(".commbox").load('/write/GCcommentList.asp',{
+        writeFlag : $("#writeFlag").val(),
+        pCbidx : "2386",
+        page : page
+      },function(){});
+    }
+    fncComment(1); // 댓글출력
+    $(document).on("click",".commbox .pageNum",function(){ 
+      fncComment( $(this).attr("href").substring(1,10) );
+    });
+
+    $(".clsMyGroup").click(function(){
+      if ( $(".clsMyGroupLay").css("display")=="none" ){
+        $.ajax({
+          type : "post",
+          data : {
+            writeFlag : $("#writeFlag").val(),
+            pId : "oceanfog"
+          },
+          url : "/write/GCMyJoinList.asp",
+          success : function(result){
+            $(".clsMyGroupLay").html(result).toggle();
+          }
+        });
+      }else{
+        $(".clsMyGroupLay").toggle();
+      }              
+    });
+
+    // vol user info e
+  });
+  -->
+  </script>
+</head>
+<body class="body">
+  <div id="fakeSel"></div>
+  <div id="skipnavi">
+    <p><a href="#gnbarea">▶주메뉴 바로가기</a></p>
+    <p><a href="#maincont">▶본문 바로가기</a></p>
+    <p><a href="#footer">▶푸터 바로가기</a></p>
+    <input type="hidden" value="H" id="writeFlag">
+  </div>
+  <div class="wrapper">
+    <div class="dimd"></div>
+    <div class="dimd4"></div>
+    <div class="dimd3"></div>
+        <div class="header" style="padding-top:15px;">
+      <!--div class="t-header" id="gnbarea">
+        <div id="vi" class="t-header-inbox2">
+          <!--gnb영역-- >
+          <iframe src="http://www.godpia.com/godpia_union/top_vi_v2.asp?url_hrf=bible.godpia.com&subUrl=/write/sub020301.asp&parm=cb_idx=2386" width="100%" height="22" frameborder="0" scrolling="no"></iframe>
+          <!--//gnb영역-- >
+        </div>
+      </div-->
+      <div class="b-header">
+
+        <div class="b-header-inbox">
+          <h1><a href="http://www.godpia.com" target="_top"><img src="/images/common/icon/logo_01.gif" alt="GODPIA 로고"></a><a href="/index.asp"><img src="/images/common/icon/logo_02.gif" alt="성경 로고"></a></h1>
+          <ul>
+            <li class="h-btn01"><a href="/etc/sub06.asp" class="clickNavMenu">성경사전</a></li>
+            <li class="h-btn02"><a href="/etc/sub04.asp" class="clickNavMenu"><span style="font-size:17px;">MY</span>메뉴</a></li>
+            <li class="h-btn03"><a href="/stats/sub00.asp" class="clickNavMenu">통계</a></li>
+            
+            <li class="h-btn01"><a href="javascript:logout()" class="clickNavMenu">로그아웃</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sub-content2-2" id="maincont">
+      <div class="sub-content-inbox">
+        <div class="sub-tit2">
+          <h3>서초 소망6 다락방</h3>
+          <p class="tit">그룹필사</p>
+        </div>
+      </div>
+    </div>
+    <div class="contbg clear">
+      <div class="sub-content-inbox">
+        <div class="scriptleft">
+          <div class="commarea">
+            <div class="commtit" style="height: 20px;">
+              <p class="tit">그룹필사 참여 댓글 게시판</p>
+              <input type="button" value="댓글쓰기" class="btn" id="commbtn">
+            </div>
+            <div class="commbox">
+<ul>
+  
+  <li style="height:65px !important;">
+    <p class="name">drbest(박정민) <span class="date">2022-06-24 오후 3:16:58</span></p>
+    <p class="redet">
+      헐.. 대박.. 경록형제님 속도.. 무엇?!!
+    </p>
+  </li>
+  
+  <li style="height:65px !important;">
+    <p class="name">drbest(박정민) <span class="date">2022-06-24 오후 12:53:46</span></p>
+    <p class="redet">
+      경록형제님! 사랑합니닷!! ㅎㅎㅎ
+    </p>
+  </li>
+  
+  <li style="height:65px !important;">
+    <p class="name">oceanfog(김경록) <span class="date">2022-06-24 오후 12:43:02</span><img src="../../images/sub/icon/spotclose.png" alt="" class="recomclear" dataidx="6685"></p>
+    <p class="redet">
+      저도 시작 해보겠습니다 ㅎㅎㅎ
+    </p>
+  </li>
+  
+</ul>  
+<div class="detpaging">
+  
+        <a href="#1" class="pageNum active"><b>1</b></a>
+      
+        <a href="#2" class="pageNum">2</a>
+      
+        <a href="#2" class="pageNum"><img src="../../images/sub/icon/page4.png" alt=""></a>
+      
+</div>
+<input type="hidden" class="clsCurPage" value="1">
+</div>
+          </div>
+          <div class="progarea" id="progarea">
+            
+            <!--찜하기 해제-->
+            <div class="clearpop" style="display: none;">
+              <p class="txt">찜하기가 해제되었습니다.</p>              
+              <input type="button" value="확인" class="comit">
+            </div>
+            <!--//찜하기 해제-->
+            <!--찜하기 해제-->
+            <div class="selectpop" style="display: none;">
+              <p class="txt">찜하기 되었습니다.</p>              
+              <input type="button" value="확인" class="comit">
+            </div>
+            <!--//찜하기 해제-->
+            <div class="progtit">
+              
+              <p class="tit"><span>김경록</span> 그룹필사 진행현황</p>
+              <p class="date">최근필사 일자 :&nbsp;&nbsp;2022-07-07</p>
+              
+              <ul>
+                <li><span class="name">본인</span><span class="spot1">찜하기</span><span class="spot2">완료</span></li>
+                <li><span class="name">그룹원</span><span class="spot3">찜하기</span><span class="spot4">완료</span></li>
+              </ul>
+            </div>
+            <div class="probox">
+              <ul id="tab" class="tmenu clear">
+                <li class=""><a href="#tb01-tab-tab" class="clsGB1">구&nbsp;약</a></li>
+                <li class="last  active"><a href="#tb02-tab-tab" class="clsGB2">신&nbsp;약</a></li>
+              </ul>
+              <div style="height:510px !important;">
+                <div class="clsVolBody tab-area tab-arrow01">
+                <table>
+                  
+                  <tbody><tr>
+                    <th>창세기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="1" datasecindex="32">1</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="2" datasecindex="26">2</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="3" datasecindex="25">3</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="4" datasecindex="27">4</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="5" datasecindex="33">5</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="6" datasecindex="23">6</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="7" datasecindex="25">7</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="8" datasecindex="23">8</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="9" datasecindex="30">9</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="10" datasecindex="33">10</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="11" datasecindex="33">11</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="12" datasecindex="21">12</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="13" datasecindex="19">13</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="14" datasecindex="25">14</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="15" datasecindex="22">15</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="16" datasecindex="17">16</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="17" datasecindex="28">17</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="18" datasecindex="34">18</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="19" datasecindex="39">19</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="20" datasecindex="19">20</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="21" datasecindex="35">21</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="22" datasecindex="25">22</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="23" datasecindex="21">23</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="24" datasecindex="68">24</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="25" datasecindex="35">25</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="26" datasecindex="36">26</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="27" datasecindex="47">27</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="28" datasecindex="23">28</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="29" datasecindex="36">29</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="30" datasecindex="44">30</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="31" datasecindex="56">31</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="32" datasecindex="33">32</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="33" datasecindex="21">33</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="34" datasecindex="32">34</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="35" datasecindex="30">35</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="36" datasecindex="44">36</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="37" datasecindex="37">37</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="38" datasecindex="31">38</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="39" datasecindex="24">39</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="40" datasecindex="24">40</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="41" datasecindex="58">41</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="42" datasecindex="39">42</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="43" datasecindex="35">43</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="44" datasecindex="35">44</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="45" datasecindex="29">45</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="46" datasecindex="35">46</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="47" datasecindex="32">47</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="48" datasecindex="23">48</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="49" datasecindex="34">49</li>
+                  
+                        <li class="spot1 " datauserid="" datausername="" datavol="gen" datachap="50" datasecindex="27">50</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>출애굽기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="1" datasecindex="23">1</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="2" datasecindex="26">2</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="3" datasecindex="23">3</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="4" datasecindex="32">4</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="5" datasecindex="24">5</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="6" datasecindex="31">6</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="7" datasecindex="26">7</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="8" datasecindex="33">8</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="9" datasecindex="36">9</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="10" datasecindex="30">10</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="11" datasecindex="11">11</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="12" datasecindex="52">12</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="13" datasecindex="23">13</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="14" datasecindex="32">14</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="15" datasecindex="28">15</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="16" datasecindex="37">16</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="17" datasecindex="17">17</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="18" datasecindex="28">18</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="19" datasecindex="26">19</li>
+                  
+                        <li class="spot4 " datauserid="arlee120" datausername="이아름" datavol="exo" datachap="20" datasecindex="27">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="36" datasecindex="1">36</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="37" datasecindex="1">37</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="38" datasecindex="1">38</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="39" datasecindex="1">39</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="exo" datachap="40" datasecindex="1">40</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>레위기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="1" datasecindex="18">1</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="2" datasecindex="17">2</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="3" datasecindex="18">3</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="4" datasecindex="36">4</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="5" datasecindex="20">5</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="6" datasecindex="31">6</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="7" datasecindex="39">7</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="8" datasecindex="37">8</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="9" datasecindex="25">9</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="10" datasecindex="21">10</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="11" datasecindex="48">11</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="12" datasecindex="9">12</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="13" datasecindex="60">13</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="14" datasecindex="58">14</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="15" datasecindex="34">15</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="16" datasecindex="35">16</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="17" datasecindex="17">17</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="18" datasecindex="31">18</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="19" datasecindex="38">19</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="20" datasecindex="28">20</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="21" datasecindex="25">21</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="22" datasecindex="34">22</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="23" datasecindex="45">23</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="24" datasecindex="24">24</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="25" datasecindex="56">25</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="26" datasecindex="47">26</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="lev" datachap="27" datasecindex="35">27</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>민수기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="num" datachap="36" datasecindex="1">36</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>신명기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="deu" datachap="34" datasecindex="1">34</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>여호수아</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jos" datachap="24" datasecindex="1">24</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>사사기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jdg" datachap="21" datasecindex="1">21</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>룻기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="rut" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="rut" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="rut" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="rut" datachap="4" datasecindex="1">4</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>사무엘상</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1sa" datachap="31" datasecindex="1">31</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>사무엘하</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2sa" datachap="24" datasecindex="1">24</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>열왕기상</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ki" datachap="22" datasecindex="1">22</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>열왕기하</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ki" datachap="25" datasecindex="1">25</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>역대상</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="1ch" datachap="29" datasecindex="1">29</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>역대하</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="2ch" datachap="36" datasecindex="1">36</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>에스라</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezr" datachap="10" datasecindex="1">10</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>느헤미야</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="neh" datachap="13" datasecindex="1">13</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>에스더</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="est" datachap="10" datasecindex="1">10</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>욥기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="36" datasecindex="1">36</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="37" datasecindex="1">37</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="38" datasecindex="1">38</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="39" datasecindex="1">39</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="40" datasecindex="1">40</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="41" datasecindex="1">41</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="job" datachap="42" datasecindex="1">42</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>시편</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="36" datasecindex="1">36</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="37" datasecindex="1">37</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="38" datasecindex="1">38</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="39" datasecindex="1">39</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="40" datasecindex="1">40</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="41" datasecindex="1">41</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="42" datasecindex="1">42</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="43" datasecindex="1">43</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="44" datasecindex="1">44</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="45" datasecindex="1">45</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="46" datasecindex="1">46</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="47" datasecindex="1">47</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="48" datasecindex="1">48</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="49" datasecindex="1">49</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="50" datasecindex="1">50</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="51" datasecindex="1">51</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="52" datasecindex="1">52</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="53" datasecindex="1">53</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="54" datasecindex="1">54</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="55" datasecindex="1">55</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="56" datasecindex="1">56</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="57" datasecindex="1">57</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="58" datasecindex="1">58</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="59" datasecindex="1">59</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="60" datasecindex="1">60</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="61" datasecindex="1">61</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="62" datasecindex="1">62</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="63" datasecindex="1">63</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="64" datasecindex="1">64</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="65" datasecindex="1">65</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="66" datasecindex="1">66</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="67" datasecindex="1">67</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="68" datasecindex="1">68</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="69" datasecindex="1">69</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="70" datasecindex="1">70</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="71" datasecindex="1">71</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="72" datasecindex="1">72</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="73" datasecindex="1">73</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="74" datasecindex="1">74</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="75" datasecindex="1">75</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="76" datasecindex="1">76</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="77" datasecindex="1">77</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="78" datasecindex="1">78</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="79" datasecindex="1">79</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="80" datasecindex="1">80</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="81" datasecindex="1">81</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="82" datasecindex="1">82</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="83" datasecindex="1">83</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="84" datasecindex="1">84</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="85" datasecindex="1">85</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="86" datasecindex="1">86</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="87" datasecindex="1">87</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="88" datasecindex="1">88</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="89" datasecindex="1">89</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="90" datasecindex="1">90</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="91" datasecindex="1">91</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="92" datasecindex="1">92</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="93" datasecindex="1">93</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="94" datasecindex="1">94</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="95" datasecindex="1">95</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="96" datasecindex="1">96</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="97" datasecindex="1">97</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="98" datasecindex="1">98</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="99" datasecindex="1">99</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="100" datasecindex="1">100</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="101" datasecindex="1">101</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="102" datasecindex="1">102</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="103" datasecindex="1">103</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="104" datasecindex="1">104</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="105" datasecindex="1">105</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="106" datasecindex="1">106</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="107" datasecindex="1">107</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="108" datasecindex="1">108</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="109" datasecindex="1">109</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="110" datasecindex="1">110</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="111" datasecindex="1">111</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="112" datasecindex="1">112</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="113" datasecindex="1">113</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="114" datasecindex="1">114</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="115" datasecindex="1">115</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="116" datasecindex="1">116</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="117" datasecindex="1">117</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="118" datasecindex="1">118</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="119" datasecindex="1">119</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="120" datasecindex="1">120</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="121" datasecindex="1">121</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="122" datasecindex="1">122</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="123" datasecindex="1">123</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="124" datasecindex="1">124</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="125" datasecindex="1">125</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="126" datasecindex="1">126</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="127" datasecindex="1">127</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="128" datasecindex="1">128</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="129" datasecindex="1">129</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="130" datasecindex="1">130</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="131" datasecindex="1">131</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="132" datasecindex="1">132</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="133" datasecindex="1">133</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="134" datasecindex="1">134</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="135" datasecindex="1">135</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="136" datasecindex="1">136</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="137" datasecindex="1">137</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="138" datasecindex="1">138</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="139" datasecindex="1">139</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="140" datasecindex="1">140</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="141" datasecindex="1">141</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="142" datasecindex="1">142</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="143" datasecindex="1">143</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="144" datasecindex="1">144</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="145" datasecindex="1">145</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="146" datasecindex="1">146</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="147" datasecindex="1">147</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="148" datasecindex="1">148</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="149" datasecindex="1">149</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="psa" datachap="150" datasecindex="1">150</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>잠언</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="pro" datachap="31" datasecindex="1">31</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>전도서</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ecc" datachap="12" datasecindex="1">12</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>아가</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="sng" datachap="8" datasecindex="1">8</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>이사야</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="1" datasecindex="32">1</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="2" datasecindex="23">2</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="3" datasecindex="27">3</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="4" datasecindex="7">4</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="5" datasecindex="31">5</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="6" datasecindex="14">6</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="7" datasecindex="26">7</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="8" datasecindex="23">8</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="9" datasecindex="22">9</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="10" datasecindex="35">10</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="11" datasecindex="17">11</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="12" datasecindex="7">12</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="13" datasecindex="23">13</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="14" datasecindex="33">14</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="15" datasecindex="10">15</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="16" datasecindex="15">16</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="17" datasecindex="15">17</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="18" datasecindex="8">18</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="19" datasecindex="26">19</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="20" datasecindex="7">20</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="21" datasecindex="18">21</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="22" datasecindex="26">22</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="23" datasecindex="19">23</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="24" datasecindex="24">24</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="25" datasecindex="13">25</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="26" datasecindex="22">26</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="27" datasecindex="14">27</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="28" datasecindex="30">28</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="29" datasecindex="25">29</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="30" datasecindex="34">30</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="31" datasecindex="10">31</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="32" datasecindex="21">32</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="33" datasecindex="25">33</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="34" datasecindex="18">34</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="35" datasecindex="11">35</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="36" datasecindex="23">36</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="37" datasecindex="39">37</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="38" datasecindex="23">38</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="39" datasecindex="9">39</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="40" datasecindex="32">40</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="41" datasecindex="30">41</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="42" datasecindex="26">42</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="43" datasecindex="29">43</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="44" datasecindex="29">44</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="45" datasecindex="26">45</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="46" datasecindex="14">46</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="47" datasecindex="16">47</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="48" datasecindex="23">48</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="49" datasecindex="27">49</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="50" datasecindex="12">50</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="51" datasecindex="24">51</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="52" datasecindex="16">52</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="53" datasecindex="13">53</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="54" datasecindex="18">54</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="55" datasecindex="14">55</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="56" datasecindex="13">56</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="57" datasecindex="22">57</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="58" datasecindex="15">58</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="59" datasecindex="22">59</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="60" datasecindex="23">60</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="61" datasecindex="12">61</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="62" datasecindex="13">62</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="63" datasecindex="20">63</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="64" datasecindex="13">64</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="65" datasecindex="26">65</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="isa" datachap="66" datasecindex="25">66</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>예레미야</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="1" datasecindex="20">1</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="2" datasecindex="38">2</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="3" datasecindex="26">3</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="4" datasecindex="32">4</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="5" datasecindex="32">5</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="6" datasecindex="31">6</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="7" datasecindex="35">7</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="8" datasecindex="23">8</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="9" datasecindex="27">9</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="10" datasecindex="26">10</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="11" datasecindex="24">11</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="12" datasecindex="18">12</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="13" datasecindex="28">13</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="14" datasecindex="23">14</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="15" datasecindex="22">15</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="16" datasecindex="22">16</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="17" datasecindex="28">17</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="18" datasecindex="24">18</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="19" datasecindex="16">19</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="20" datasecindex="19">20</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="21" datasecindex="15">21</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="22" datasecindex="31">22</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="23" datasecindex="41">23</li>
+                  
+                        <li class="spot4 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="24" datasecindex="11">24</li>
+                  
+                        <li class="spot3 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="25" datasecindex="30">25</li>
+                  
+                        <li class="spot3 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="spot3 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="spot3 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="spot3 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="spot3 " datauserid="drbest" datausername="박정민" datavol="jer" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="36" datasecindex="1">36</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="37" datasecindex="1">37</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="38" datasecindex="1">38</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="39" datasecindex="1">39</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="40" datasecindex="1">40</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="41" datasecindex="1">41</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="42" datasecindex="1">42</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="43" datasecindex="1">43</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="44" datasecindex="1">44</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="45" datasecindex="1">45</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="46" datasecindex="1">46</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="47" datasecindex="1">47</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="48" datasecindex="1">48</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="49" datasecindex="1">49</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="50" datasecindex="1">50</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="51" datasecindex="1">51</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jer" datachap="52" datasecindex="1">52</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>예레미야애가</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="lam" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="lam" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="lam" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="lam" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="lam" datachap="5" datasecindex="1">5</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>에스겔</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="14" datasecindex="1">14</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="15" datasecindex="1">15</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="16" datasecindex="1">16</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="17" datasecindex="1">17</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="18" datasecindex="1">18</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="19" datasecindex="1">19</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="20" datasecindex="1">20</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="21" datasecindex="1">21</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="22" datasecindex="1">22</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="23" datasecindex="1">23</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="24" datasecindex="1">24</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="25" datasecindex="1">25</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="26" datasecindex="1">26</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="27" datasecindex="1">27</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="28" datasecindex="1">28</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="29" datasecindex="1">29</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="30" datasecindex="1">30</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="31" datasecindex="1">31</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="32" datasecindex="1">32</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="33" datasecindex="1">33</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="34" datasecindex="1">34</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="35" datasecindex="1">35</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="36" datasecindex="1">36</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="37" datasecindex="1">37</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="38" datasecindex="1">38</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="39" datasecindex="1">39</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="40" datasecindex="1">40</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="41" datasecindex="1">41</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="42" datasecindex="1">42</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="43" datasecindex="1">43</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="44" datasecindex="1">44</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="45" datasecindex="1">45</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="46" datasecindex="1">46</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="47" datasecindex="1">47</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="ezk" datachap="48" datasecindex="1">48</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>다니엘</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="dan" datachap="12" datasecindex="1">12</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>호세아</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hos" datachap="14" datasecindex="1">14</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>요엘</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jol" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jol" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jol" datachap="3" datasecindex="1">3</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>아모스</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="amo" datachap="9" datasecindex="1">9</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>오바댜</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="oba" datachap="1" datasecindex="1">1</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>요나</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jnh" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jnh" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jnh" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="jnh" datachap="4" datasecindex="1">4</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>미가</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mic" datachap="7" datasecindex="1">7</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>나훔</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="nam" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="nam" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="nam" datachap="3" datasecindex="1">3</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>하박국</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hab" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hab" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hab" datachap="3" datasecindex="1">3</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>스바냐</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zep" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zep" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zep" datachap="3" datasecindex="1">3</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>학개</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hag" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="hag" datachap="2" datasecindex="1">2</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>스가랴</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="4" datasecindex="1">4</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="5" datasecindex="1">5</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="6" datasecindex="1">6</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="7" datasecindex="1">7</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="8" datasecindex="1">8</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="9" datasecindex="1">9</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="10" datasecindex="1">10</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="11" datasecindex="1">11</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="12" datasecindex="1">12</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="13" datasecindex="1">13</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="zec" datachap="14" datasecindex="1">14</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>말라기</th>
+                    <td>
+                      <ul>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mal" datachap="1" datasecindex="1">1</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mal" datachap="2" datasecindex="1">2</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mal" datachap="3" datasecindex="1">3</li>
+                  
+                        <li class="" datauserid="" datausername="" datavol="mal" datachap="4" datasecindex="1">4</li>
+                  
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody></table>
+</div>
+              </div>
+              <p class="txt">*그룹 개설자는 모든 찜하기를 클릭하여 취소 시킬 수 있습니다</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="scriptright">
+          <div class="setviewarea">
+            
+            <!--설정팝업-->
+            <div class="setpop" style="display: none;">
+              <div class="close5"><img src="../../images/sub/icon/modal_close.png"></div>
+              <ul id="tab2" class="tmenu2 clear">
+                <li class="active"><a href="#tb03-tab-tab">기본정보</a></li>
+                <li class="last"><a href="#tb04-tab-tab">회원관리</a></li>
+              </ul>
+              <div id="tb03-tab" class="tab-area tab-arrow01"></div>
+              <div id="tb04-tab" class="tab-area tab-arrow02" style="display: none;"></div>
+            </div>
+            <!--//설정팝업-->
+            <div class="setview" style="margin-top:33px !important;">
+              <table>
+                <tbody><tr>
+                  <th>운영자</th>
+                  <td>drbest (박정민)</td>
+                </tr>
+                <tr>
+                  <th>회원수</th>
+                  <td>3명</td>
+                </tr>
+                <tr>
+                  <th>개설일</th>
+                  <td>2022-06-24</td>
+                </tr>
+                <tr>
+                  <th>필사타입</th>
+                  <td>그룹</td>
+                </tr>
+                <tr>
+                  <th title="하루한번 0시에 업데이트됩니다">그룹필사순위</th>
+                  <td>358 / 2063<!--span>80</span>/100--></td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+          <div class="ddayarea">
+            
+              <p class="txt">D-DAY  목표를 정하시고 <br> 명예의전당에 등록하도록 해보세요</p>
+              <span class="btn" id="registration">등록</span>
+              
+            <script>
+              $('#registration').click(function(){
+                alert("운영자만 설정할수 있습니다.");
+              });
+            </script>
+              
+          </div>
+          <div class="rankarea">
+            <p class="tit"> 참여자순위</p>
+            <div class="rankview">
+              <table>
+                <colgroup>
+                  <col width="">
+                  <col width="">
+                  <col width="15px;">
+                  <col width="">
+                </colgroup>
+                
+                <tbody><tr class="clsGCUserList" dataid="drbest" datacbidx="2386">
+                  <th>1</th>
+                  <td class="text-l  rankon">drbest (박정민)</td>
+                  <td class=" rankon">|</td>
+                  <td class=" rankon"> (117)</td>
+                </tr>
+                
+                <tr class="clsGCUserList" dataid="oceanfog" datacbidx="2386">
+                  <th>2</th>
+                  <td class="text-l  rankon">oceanfog (김경록)</td>
+                  <td class=" rankon">|</td>
+                  <td class=" rankon"> (66)</td>
+                </tr>
+                
+                <tr class="clsGCUserList" dataid="arlee120" datacbidx="2386">
+                  <th>3</th>
+                  <td class="text-l  rankon">arlee120 (이아름)</td>
+                  <td class=" rankon">|</td>
+                  <td class=" rankon"> (24)</td>
+                </tr>
+                
+              </tbody></table>
+              
+              <div class="detpaging gUserPage" style="height:25px;border-top:1px solid #e5e5e5;padding-top: 10px;">
+                
+        <a href="#1" class="pageNum active"><b>1</b></a>
+      
+              </div>  
+              
+            </div>
+          </div>
+          
+          <div class="joinarea clsGroupOut">그룹 탈퇴하기</div>
+          
+          
+          <div class="grouparea">
+            <div id="select_box3">
+              <span class="clsMyGroup" style="cursor: pointer;padding: 19px 65px 18px 40px;">나의 다른 그룹 보기</span>
+              <div class="clsMyGroupLay" style="display:none;"></div>
+            </div>
+          </div>
+          <!--div class="godbanner">
+            갓피아 배너
+          </div-->
+        </div>
+      </div>
+    </div>
+    <!--//성경컨텐츠영역-->
+        <div class="footer" id="footer">
+      <div class="footer-box1 clear">
+        <ul>
+          <!--li ><a href="mailto:help@sarang.org">제휴문의</a></li-->
+          <li><a href="http://help.godpia.com/frameindex.asp?url_flag=/g_help/faq/help_faq_sub_con.asp?db_idx=228" target="_top">이용약관</a></li>
+          <li><a href="http://help.godpia.com/frameindex.asp?url_flag=/g_help/faq/help_faq_sub_con.asp?db_idx=226" target="_top">개인정보취급방침</a></li>
+          <li class="last"><a href="http://help.godpia.com/" target="_top">문의센터</a></li>
+        </ul>
+      </div>
+      <div class="footer-box2">
+        본 사이트에 사용한   「 성경전서 개역개정판 」 , 「 성경전서 개역한글판 」  , 「 공동번역성서 개정판 」 , 「 성경전서 새번역 」 의 저작권은 재단법인 대한성서공회 소유이며
+        재단법인 대한성서공회의 허락을 받고 사용하였음. 「 현대인의성경 」은 생명의말씀사. 「 쉬운성경 」  , 「 성경사전 」은 ㈜아가페출판사의 허락을 받고 사용하였음.
+      </div>
+      <div class="footer-box3">
+        Copyrights ⓒ GODpia.com All Rights reserved.
+      </div>
+    </div>
+
+  </div>
+  
+  <!--댓글팝업-->
+  <div class="commpop" style="display: none;">
+    <div class="close5"><img src="../../images/sub/icon/modal_close.png"></div>
+    <div class="tit">댓글 작성하기</div>
+    <table>
+      <colgroup>
+        <col width="60px;">
+        <col width="/">
+      </colgroup>
+      <tbody><tr>
+        <th>작성자</th>
+        <td>oceanfog(김경록)</td>
+      </tr>
+      <tr>
+        <th>내용</th>
+        <td><textarea name="clsContents" class="clsContents" cols="30" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="right"><span id="commentChars">0 / 300</span></td>
+      </tr>
+    </tbody></table>
+    <input type="button" value="등록하기" class="registr">
+  </div>
+  <!--//댓글팝업-->
+  <div class="clsEditBtn" style="position:absolute;display: none;cursor: pointer" datavol="" datachap=""><img src="../../images/sub/icon/spotclose.png" alt="" class="spotclose"></div>
+  <div class="clsUserId" style="position:absolute;display: none; border: 2px solid #989898; box-sizing: border-box; color: #414141; text-align:center; font-size: 13px; background: #fff; z-index: 9999; padding:1px 5px;"></div>
+  <div class="pwpop" style="display: none;z-index:999999 !important;">
+    <div class="pwarea">
+      <div class="close5"><img src="../../images/sub/icon/modal_close.png"></div>
+      <span>계정비밀번호</span><input type="password" class="pwbox" maxlength="20">
+      <div id="altPopPwd" style="width:100%; text-align:center;"></div>
+      <div class="btnarea">
+        <input type="button" value="확인" class="comit">
+        <input type="button" value="취소" class="cancel">
+      </div>
+    </div>
+  </div>
+  
+          
+ 
+
+</body></html>

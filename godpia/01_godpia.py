@@ -6,6 +6,7 @@ import random, os
 
 import chromedriver_autoinstaller
 from selenium.webdriver.common.by import By
+from godpia.Book import Book
 
 class GodPiaBibleWriter:
 
@@ -16,10 +17,11 @@ class GodPiaBibleWriter:
             id = os.environ.get("GODPIA_ID")  # 환경변수 설정
             password = os.environ.get("GODPIA_PASSWORD")  # 환경변수 설정
             if id == None or password == None:
-                print('id또는 패스워드를 입력해주세요')
+                print('id또는 패스워드를 입력해주세요. 입력하는 방법은 READMD.md를 참고해주세요.')
                 exit()
             driver = webdriver.Chrome(options=Options())
             self.login(driver, id, password)
+            # self.save_page("http://bible.godpia.com/write/sub020301.asp?cb_idx=2386", driver, "구약_쓸장선택.html")
         elif mode == 'debug':
             chrome_options = Options()
             chrome_options.add_experimental_option('debuggerAddress', '127.0.0.1:9222')
@@ -39,6 +41,32 @@ class GodPiaBibleWriter:
 
         xp = '/html/body/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[1]/td[1]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr/td[2]/table/tbody/tr[2]/td/a/img'
         driver.find_element(By.XPATH, xp).click()
+
+    def save_page(self, url, driver, filename="ee.html"):
+        time.sleep(1)
+        driver.get(url)
+        time.sleep(1)
+
+        open(f'{filename}', 'w+', encoding='utf-8')\
+            .write(driver.page_source)
+
+        print(f'{filename}(으)로 저장 했습니다.')
+
+        exit(0)
+
+    def get_target(self):
+        # 쓸 책과 from, to 장을 정하는 기능
+        # book의 전체 chapter보다는 작게
+        #
+        return {'book_name':'mat', 'from_chapter':14, 'to_chapter': 15}
+
+    def send_message(self):
+        msg = {
+            0 : "오늘은 쓸게 없네요?",
+            1 : "오늘은 안쓰는 날 입니다.",
+            2 : "{}부터 {}까지 썼습니다."
+        }
+
 
     def run(self, chapterUrl):
         self.driver.get(chapterUrl)
@@ -86,7 +114,8 @@ class GodPiaBibleWriter:
 #1pe 벧전 #2pe벧후3 1jn요일 5 계rev
 #창gen 출exo
 godpia_writer = GodPiaBibleWriter('login')
-godpia_writer.call('sub020302', '2386', 'gen', 10, 11)
+t = godpia_writer.get_target()
+godpia_writer.call('sub020302', '2386', 'gen', 47, 50)
 
 
 
