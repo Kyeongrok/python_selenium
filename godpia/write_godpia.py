@@ -1,19 +1,19 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import time
 from selenium.webdriver.common.keys import Keys
-import random, os
+import random, os, requests, time
 
 import chromedriver_autoinstaller
 from selenium.webdriver.common.by import By
 from godpia.Book import Book
+from godpia.parser import TargetSelector, Target
 
 class GodPiaBibleWriter:
 
-    def __init__(self, mode):
+    def __init__(self, mode='LOGIN'):
         chromedriver_autoinstaller.install()
 
-        if mode == 'login':
+        if mode == 'LOGIN':
             id = os.environ.get("GODPIA_ID")  # 환경변수 설정
             password = os.environ.get("GODPIA_PASSWORD")  # 환경변수 설정
             if id == None or password == None:
@@ -21,7 +21,8 @@ class GodPiaBibleWriter:
                 exit()
             driver = webdriver.Chrome(options=Options())
             self.login(driver, id, password)
-            self.save_page("http://bible.godpia.com/write/sub020301.asp?cb_idx=2386#tb02-tab-tab", driver, "신약_쓸장선택.html")
+            # self.save_page("http://bible.godpia.com/write/sub020301.asp?cb_idx=2386#tb02-tab-tab", driver, "신약_쓸장선택.html")
+
         elif mode == 'debug':
             chrome_options = Options()
             chrome_options.add_experimental_option('debuggerAddress', '127.0.0.1:9222')
@@ -43,6 +44,7 @@ class GodPiaBibleWriter:
         driver.find_element(By.XPATH, xp).click()
 
     def save_page(self, url, driver, filename="ee.html"):
+
         time.sleep(1)
         driver.get(url)
         time.sleep(1)
@@ -56,11 +58,19 @@ class GodPiaBibleWriter:
 
         exit(0)
 
-    def get_target(self):
+    def get_target(self) -> Target:
         # 쓸 책과 from, to 장을 정하는 기능
-        # book의 전체 chapter보다는 작게
-        #
-        return {'book_name':'mat', 'from_chapter':14, 'to_chapter': 15}
+        url = "http://bible.godpia.com/write/sub020301.asp?cb_idx=2386#tb02-tab-tab"
+        self.driver.get(url)
+        time.sleep(1)
+        ts = TargetSelector(self.driver.page_source) # 생성 할 때 구약 페이지
+        self.driver.find_element(By.XPATH, '//*[@id="tab"]/li[2]/a').click()
+        time.sleep(1)
+        ts.parse(self.driver.page_source) # parse할 때 신약 페이지
+
+        target:Target = ts.get_target_book_chapters()
+
+        return target
 
     def send_message(self):
         msg = {
@@ -105,20 +115,24 @@ class GodPiaBibleWriter:
             textarea.send_keys(Keys.RETURN)
             time.sleep(0.5)
 
-    def call(self, sub, cb_idx, book_cd, fr, to):
+    def call(self, sub, cb_idx, book_cd, chapters):
 
-        for chapter in range(fr, to + 1):
+        for chapter in chapters:
             print("{}장".format(chapter))
             chapterUrl = f"http://bible.godpia.com/write/{sub}.asp?cb_idx={cb_idx}&ver=gae&vol={book_cd}&chap={chapter}&secindex=1"
             self.run(chapterUrl)
-            time.sleep(60 * 6)
+            wait_sec = 60 * 6
+            print(f'{wait_sec / 60}분을 기다립니다.')
+            time.sleep(wait_sec)
 
 #1pe 벧전 #2pe벧후3 1jn요일 5 계rev
 #창gen 출exo
-godpia_writer = GodPiaBibleWriter('login')
-t = godpia_writer.get_target()
-godpia_writer.call('sub020302', '2386', 'gen', 47, 50)
+godpia_writer = GodPiaBibleWriter()
 
+t:Target = godpia_writer.get_target()
+godpia_writer.call('sub020302', '2386', t.sbn, t.chapters)
 
-
-
+msg = f'{t.sbn} {t.chapters} FINISHED'
+print(msg)
+requests.get(
+    f"https://api.telegram.org/bot281761192:AAE7h61HIio8eviXggpssYHrJJ58nHWT32A/sendMessage?chat_id=-1001595888089&text={msg}")

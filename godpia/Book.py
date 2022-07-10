@@ -22,13 +22,14 @@ class Chapter:
         elif self.css_class[0] == 'spot4':
             self.status = 'FINISHED_BY_OTHER' #'남이 친 것'
         else:
-            print("Chapter status를 정할 수 없습니다.")
+            print(f"{self.shortened_chapter_name} {self.no} Chapter status를 정할 수 없습니다. css_class:{self.css_class}")
             self.status = ''
 
 
 class Book:
     def __init__(self, name, ul:bs4.element.Tag):
         self.name = name
+        self.shortened_book_name = ''
         self.chapters = []
         self.status = '' # 이 책이 쓸게 남아있는 상태인지 IN_PROGRESS, FINISHED
         self.parse(ul)
@@ -40,6 +41,7 @@ class Book:
         for li in lis:
             c = Chapter(li['datavol'], int(li.text), li['datauserid'], li['class'])
             self.chapters.append(c)
+        self.shortened_book_name = lis[0]['datavol']
 
     def set_status(self):
         # chapters가 모두 끝났다면 'FINISHED'
@@ -59,15 +61,10 @@ class Book:
             self.status = 'INPROGRESS_BY_ME'
         elif reserved_by_me == 0 and reserved_by_other > 0:
             self.status = 'INPROGRESS_BY_OTHER'
+        elif reserved_by_me == 0 and reserved_by_other == 0:
+            self.status = 'READY'
         else:
-            print(reserved_by_me, reserved_by_other)
-
-        # 내가 치는 중
-        # 남이 치는 중
+            print(f'Book의 상태를 결정할 수 없습니다. reserved_by_me:{reserved_by_me} reserved_by_other:{reserved_by_other}')
 
     def isFinished(self):
         return self.status == 'FINISHED'
-
-
-
-
