@@ -49,21 +49,6 @@ class TargetSelector:
             self.books.append(b)
 
 
-def parse(page_string) -> list:
-    # userId에 따라 return값이 달라짐
-    soup = BeautifulSoup(page_string, 'html.parser')
-    table1 = soup.find("div", {"class": "clsVolBody"}).find("table")
-    trs = table1.find_all("tr")
-    books = []
-    for tr in trs:
-        book_name = tr.find('th').text
-        # print(tr)
-        b = Book(book_name, tr.find('ul'))
-        books.append(b)
-
-    return books
-
-
 if __name__ == "__main__":
     f = open(f'{"신약_쓸장선택.html"}', 'r', encoding='utf-8').read()
     f2 = open(f'{"신약_쓸장선택.html"}', 'r', encoding='utf-8').read()

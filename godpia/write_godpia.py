@@ -5,7 +5,6 @@ import random, os, requests, time
 
 import chromedriver_autoinstaller
 from selenium.webdriver.common.by import By
-from godpia.Book import Book
 from godpia.parser import TargetSelector, Target
 
 class GodPiaBibleWriter:
