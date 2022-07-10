@@ -12,31 +12,27 @@ class Chapter:
     def set_status(self):
         if not self.css_class:
             # False라는 것은 user가 나라는 것
-            print(self.css_class, self.data_user_id, '비어있는 것')
-            pass
+            self.status = 'NOTHING' #'비어있는 것'
         elif self.css_class[0] == 'spot1':
-            print(self.css_class, self.data_user_id, '내가 친 것')
-            self.status = ''
+            self.status = 'FINISHED_BY_ME' #'내가 친 것'
         elif self.css_class[0] == 'spot2':
-            print(self.css_class, self.data_user_id, '내가 예약한 것')
-            self.status = ''
+            self.status = 'RESERVED_BY_ME' #'내가 예약한 것'
         elif self.css_class[0] == 'spot3':
-            print(self.css_class, self.data_user_id, '남이 예약한 것')
-            self.status = ''
+            self.status = 'RESERVED_BY_OTHER' #'남이 예약한 것'
         elif self.css_class[0] == 'spot4':
-            print(self.css_class, self.data_user_id, '남이 친 것')
-            self.status = ''
+            self.status = 'FINISHED_BY_OTHER' #'남이 친 것'
         else:
             print("Chapter status를 정할 수 없습니다.")
             self.status = ''
 
 
-
 class Book:
-    def __init__(self, name, tr:bs4.element.Tag):
+    def __init__(self, name, ul:bs4.element.Tag):
         self.name = name
         self.chapters = []
         self.status = '' # 이 책이 쓸게 남아있는 상태인지 IN_PROGRESS, FINISHED
+        self.parse(ul)
+        self.set_status()
 
     def parse(self, ul):
         # user_id와 li의 class를 이용해 status판단 가능
@@ -47,7 +43,27 @@ class Book:
 
     def set_status(self):
         # chapters가 모두 끝났다면 'FINISHED'
-        self.status = ''
+        finished_cnt = 0
+        reserved_by_me = 0
+        reserved_by_other = 0
+        for chapter in self.chapters:
+            if chapter.status == 'FINISHED_BY_ME' or chapter.status == 'FINISHED_BY_OTHER':
+                finished_cnt += 1
+            elif chapter.status == 'RESERVED_BY_ME':
+                reserved_by_me += 1
+            elif chapter.status == 'RESERVED_BY_OTHER':
+                reserved_by_other += 1
+        if finished_cnt == len(self.chapters):
+            self.status = 'FINISHED'
+        elif reserved_by_me > 0 and reserved_by_other == 0:
+            self.status = 'INPROGRESS_BY_ME'
+        elif reserved_by_me == 0 and reserved_by_other > 0:
+            self.status = 'INPROGRESS_BY_OTHER'
+        else:
+            print(reserved_by_me, reserved_by_other)
+
+        # 내가 치는 중
+        # 남이 치는 중
 
     def isFinished(self):
         return self.status == 'FINISHED'

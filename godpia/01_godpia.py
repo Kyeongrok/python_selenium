@@ -21,7 +21,7 @@ class GodPiaBibleWriter:
                 exit()
             driver = webdriver.Chrome(options=Options())
             self.login(driver, id, password)
-            # self.save_page("http://bible.godpia.com/write/sub020301.asp?cb_idx=2386", driver, "구약_쓸장선택.html")
+            self.save_page("http://bible.godpia.com/write/sub020301.asp?cb_idx=2386#tb02-tab-tab", driver, "신약_쓸장선택.html")
         elif mode == 'debug':
             chrome_options = Options()
             chrome_options.add_experimental_option('debuggerAddress', '127.0.0.1:9222')
@@ -46,6 +46,8 @@ class GodPiaBibleWriter:
         time.sleep(1)
         driver.get(url)
         time.sleep(1)
+        driver.find_element(By.XPATH, '//*[@id="tab"]/li[2]/a').click()
+        time.sleep(2)
 
         open(f'{filename}', 'w+', encoding='utf-8')\
             .write(driver.page_source)
