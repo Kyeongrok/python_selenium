@@ -25,10 +25,12 @@ class TargetSelector:
         rnd_int = random.randint(3, 5)
         target_chapter_no = []
         for book in self.books:
-            # print(book.name, book.shortened_book_name, book.status)
+            print(book.name, book.shortened_book_name, book.status)
             if book.status == 'INPROGRESS_BY_ME':
                 target_book = book
                 break
+        if target_book == '':
+            print('선택된 장이 없습니다. 장을 선택 해주세요.')
 
         idx = 0
         while rnd_int > 0 and idx < len(target_book.chapters):

@@ -21,6 +21,8 @@ class Chapter:
             self.status = 'RESERVED_BY_OTHER' #'남이 예약한 것'
         elif self.css_class[0] == 'spot4':
             self.status = 'FINISHED_BY_OTHER' #'남이 친 것'
+        elif self.css_class[0] == '':
+            self.status = 'READY'
         else:
             print(f"{self.shortened_chapter_name} {self.no} Chapter status를 정할 수 없습니다. css_class:{self.css_class}")
             self.status = ''
@@ -41,6 +43,7 @@ class Book:
         for li in lis:
             c = Chapter(li['datavol'], int(li.text), li['datauserid'], li['class'])
             self.chapters.append(c)
+        print(f'finished chapter parse name:{self.name}')
         self.shortened_book_name = lis[0]['datavol']
 
     def set_status(self):
