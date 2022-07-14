@@ -9,8 +9,11 @@ from godpia.parser import TargetSelector, Target
 
 class GodPiaBibleWriter:
 
-    def __init__(self, mode='LOGIN'):
+    def __init__(self, sub, cb_idx, wait_min=6, mode='LOGIN'):
         chromedriver_autoinstaller.install()
+        self.sub = sub
+        self.cb_idx = cb_idx
+        self.wait_sec = 60 * wait_min
 
         if mode == 'LOGIN':
             print(os.environ)
@@ -79,7 +82,7 @@ class GodPiaBibleWriter:
 
         self.driver.set_page_load_timeout(5)
         self.driver.find_element(By.XPATH, '//*[@id="tab"]/li[1]/a').click()
-        ts = TargetSelector(self.driver.page_source) # 생성 할 때 구약 페이지
+        ts = TargetSelector(self.driver.page_source, 3, 5)
         self.driver.find_element(By.XPATH, '//*[@id="tab"]/li[2]/a').click()
         time.sleep(1)
         ts.parse(self.driver.page_source) # parse할 때 신약 페이지
@@ -96,7 +99,7 @@ class GodPiaBibleWriter:
         }
 
 
-    def run(self, chapterUrl):
+    def write_chapter(self, chapterUrl):
         self.driver.get(chapterUrl)
 
         ul = self.driver.find_element(By.CLASS_NAME,"write").find_element(By.TAG_NAME, "ul")
@@ -131,24 +134,26 @@ class GodPiaBibleWriter:
             textarea.send_keys(Keys.RETURN)
             time.sleep(0.5)
 
-    def call(self, sub, cb_idx, book_cd, chapters):
+    def call(self, book_cd, chapters):
         print('GODPIA WRITE 시작')
         for chapter in chapters:
-            print("{}장".format(chapter))
-            chapterUrl = f"http://bible.godpia.com/write/{sub}.asp?cb_idx={cb_idx}&ver=gae&vol={book_cd}&chap={chapter}&secindex=1"
-            self.run(chapterUrl)
-            wait_sec = 60 * 6
-            print(f'{wait_sec / 60}분을 기다립니다.')
-            time.sleep(wait_sec)
+            print(f"{book_cd} {chapter}장")
+            chapter_url = f"http://bible.godpia.com/write/{self.sub}.asp?cb_idx={self.cb_idx}&ver=gae&vol={book_cd}&chap={chapter}&secindex=1"
+            self.write_chapter(chapter_url)
+            print(f'{self.wait_sec / 60}분을 기다립니다.')
+            time.sleep(self.wait_sec)
 
-#1pe 벧전 #2pe벧후3 1jn요일 5 계rev
-#창gen 출exo
-godpia_writer = GodPiaBibleWriter()
 
-t:Target = godpia_writer.get_target()
-godpia_writer.call('sub020302', '2386', t.sbn, t.chapters)
+if __name__ == "__main__":
+    #1pe 벧전 #2pe벧후3 1jn요일 5 계rev
+    #창gen 출exo
+    godpia_writer = GodPiaBibleWriter(sub='sub020302', cb_idx='2386')
 
-msg = f'{t.sbn} {t.chapters} FINISHED'
-print(msg)
-requests.get(
-    f"https://api.telegram.org/bot281761192:AAE7h61HIio8eviXggpssYHrJJ58nHWT32A/sendMessage?chat_id=-1001595888089&text={msg}")
+    t:Target = godpia_writer.get_target()
+    godpia_writer.call(t.sbn, t.chapters)
+
+    msg = f'{t.sbn} {t.chapters} FINISHED'
+    chat_id = '-1001595888089'
+    print(msg)
+    requests.get(
+        f"https://api.telegram.org/bot281761192:AAE7h61HIio8eviXggpssYHrJJ58nHWT32A/sendMessage?chat_id={chat_id}&text={msg}")

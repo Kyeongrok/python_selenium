@@ -9,9 +9,11 @@ class Target:
 
 
 class TargetSelector:
-    def __init__(self, page_string):
+    def __init__(self, page_string, rnd_page_from=3, rnd_page_end=5):
         self.books = []
         self.from_chapter_no = 1
+        self.rnd_page_from = rnd_page_from
+        self.rnd_page_end = rnd_page_end
         self.parse(page_string)
 
     def parse(self, page_string):
@@ -22,7 +24,7 @@ class TargetSelector:
 
     def get_target_book_chapters(self) -> Target:
         target_book:Book = ''
-        rnd_int = random.randint(3, 5)
+        rnd_int = random.randint(self.rnd_page_from, self.rnd_page_end)
         target_chapter_no = []
         for book in self.books:
             print(book.name, book.shortened_book_name, book.status)
