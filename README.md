@@ -11,6 +11,16 @@ docker build godpia_writer .
 docker run --env GODPIA_ID=<id> --env GODPIA_PASSWORD=<password> godpia_writer env
 ```
 
+### Docker build하고 push
+image는 Docker hub에 업로드 되어 있습니다.
+
+https://hub.docker.com/repository/docker/oceanfog1/godpia-writer
+
+```
+docker build -t oceanfog1/godpia-writer:<tagname> .
+docker push oceanfog1/godpia-writer:<tagname>
+```
+
 ex) docker run --env GODPIA_ID=oceanfog1 --env GODPIA_PASSWORD=password1 godpia_writer env
 
 
