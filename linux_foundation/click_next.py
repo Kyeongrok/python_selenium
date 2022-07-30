@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     time.sleep(1)
     # 들어가서 클릭
-    url = 'https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/api-objects/lab-exercises?page=1'
+    url = 'https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/helm/first-lesson'
     driver.get(url)
     time.sleep(1)
     driver.find_element(By.CLASS_NAME, '')
