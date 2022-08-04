@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import sys
+import chromedriver_autoinstaller
 
 chrome_options = Options()
 # chrome_options.add_argument("--headless")
+chromedriver_autoinstaller.install()
 driver = webdriver.Chrome(
-    executable_path="{}/chrome/chromedriver77".format(".."),
     options=chrome_options
 )
 
